@@ -1,0 +1,47 @@
+{
+  "sortedMiddleware": [
+    "/submissions",
+    "/submissions/ideas"
+  ],
+  "clientInfo": [
+    [
+      "/submissions",
+      false
+    ],
+    [
+      "/submissions/ideas",
+      false
+    ]
+  ],
+  "middleware": {
+    "/submissions": {
+      "env": [
+        "NEXTAUTH_URL",
+        "NEXTAUTH_SECRET",
+        "VERCEL"
+      ],
+      "files": [
+        "server/middleware-runtime.js",
+        "server/pages/submissions/_middleware.js"
+      ],
+      "name": "pages/submissions/_middleware",
+      "page": "/submissions",
+      "regexp": "^/submissions(?:(/.*)?)$"
+    },
+    "/submissions/ideas": {
+      "env": [
+        "NEXTAUTH_URL",
+        "NEXTAUTH_SECRET",
+        "VERCEL"
+      ],
+      "files": [
+        "server/middleware-runtime.js",
+        "server/pages/submissions/ideas/_middleware.js"
+      ],
+      "name": "pages/submissions/ideas/_middleware",
+      "page": "/submissions/ideas",
+      "regexp": "^/submissions/ideas(?:(/.*)?)$"
+    }
+  },
+  "version": 1
+}

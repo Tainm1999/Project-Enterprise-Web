@@ -1,0 +1,11 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/api/ideas/getComments/[id]": "pages/api/ideas/getComments/[id].js",
+  "/api/ideas": "pages/api/ideas.js",
+  "/api/ideas/getReactions/[...slug]": "pages/api/ideas/getReactions/[...slug].js",
+  "/api/comments/create": "pages/api/comments/create.js",
+  "/submissions/ideas/[id]": "pages/submissions/ideas/[id].js",
+  "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js"
+}
